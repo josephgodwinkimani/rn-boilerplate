@@ -11,6 +11,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import Home from './src/Screens/Home';
 import Page2 from './src/Screens/Page2';
+import DrawerManager from './src/DrawerManager';
 
 const Stack = createStackNavigator();
 
@@ -37,6 +38,14 @@ function NavStack() {
         options={{
           headerShown: false,
           title: 'rnboilerplate'
+        }}
+      />
+      <Stack.Screen
+        name='DrawerManager'
+        component={DrawerManager}
+        options={{
+          headerShown: false,
+          title: 'With Drawer'
         }}
       />
       <Stack.Screen
