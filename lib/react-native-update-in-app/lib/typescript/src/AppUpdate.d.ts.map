@@ -1,0 +1,1 @@
+{"version":3,"file":"AppUpdate.d.ts","sourceRoot":"","sources":["../../../src/AppUpdate.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,kBAAkB,EAAE,MAAM,cAAc,CAAC;AAIlD,OAAO,KAAK,EAAE,uBAAuB,EAAE,MAAM,SAAS,CAAC;AAIvD,QAAA,MAAM,SAAS;yCAC0B,uBAAuB,KAAK,IAAI;sBAQnD,QAAQ,MAAM,CAAC;wBAGb,MAAM;4BAGF,MAAM,GAAG,QAAQ,IAAI,CAAC;;CAajD,CAAC;AAEF,OAAO,EAAE,SAAS,EAAE,CAAC"}

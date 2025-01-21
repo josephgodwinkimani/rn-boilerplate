@@ -29,6 +29,43 @@ export const css = StyleSheet.create({
         marginBottom: 20,
         fontFamily: 'SourceSansPro-Black'
     },
+    modalBackground: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: 'rgba(0, 0, 0, 0.5)',
+    },
+    modalContainer: {
+        width: '80%',
+        padding: 20,
+        backgroundColor: 'white',
+        borderRadius: 10,
+        alignItems: 'center',
+    },
+    modalTitle: {
+        fontSize: 20,
+        fontWeight: 'bold',
+        marginBottom: 15,
+    },
+    updateMessage: {
+        textAlign: 'center',
+        marginBottom: 20,
+    },
+    buttonContainer: {
+        width: '100%',
+        flexDirection: 'row',
+        justifyContent: 'center',
+    },
+    buttonSpacer: {
+        width: 20,
+    },
+    progressContainer: {
+        alignItems: 'center',
+        marginTop: 10,
+    },
+    progressText: {
+        marginTop: 10,
+    },
     footer: {
         position: 'absolute',
         bottom: 0,
