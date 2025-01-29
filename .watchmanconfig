@@ -1,1 +1,15 @@
-{}
+{
+    "ignore_dirs": [
+        "node_modules",
+        "ios",
+        "android"
+    ],
+    "root_files": [
+        "package.json",
+        ".watchmanconfig"
+    ],
+    "subscription_disposition": [
+        "append"
+    ],
+    "gc_age_seconds": 3600
+}

@@ -1,7 +1,8 @@
 {
-    "recommendations": [
-        "visualstudioexptteam.vscodeintellicode",
-        "christian-kohler.npm-intellisense",
-        "christian-kohler.path-intellisense"
-    ]
+	"recommendations": [
+		"visualstudioexptteam.vscodeintellicode",
+		"christian-kohler.npm-intellisense",
+		"christian-kohler.path-intellisense",
+		"biomejs.biome"
+	]
 }

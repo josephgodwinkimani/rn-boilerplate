@@ -14,11 +14,14 @@ import { version } from '../../package.json';
 import { displayName } from '../../app.json';
 
 const Footer = () => {
-    return (
-        <View style={css.footer}>
-            <Text style={css.footerText}>{displayName} v{version} | Current Date: {new Date().toLocaleDateString()}</Text>
-        </View>
-    );
+	return (
+		<View style={css.footer}>
+			<Text style={css.footerText}>
+				{displayName} v{version} | Current Date:{' '}
+				{new Date().toLocaleDateString()}
+			</Text>
+		</View>
+	);
 };
 
 export default Footer;

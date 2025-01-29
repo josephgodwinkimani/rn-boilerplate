@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  install-and-test:
+  install-and-copy-assets:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -20,9 +20,15 @@ jobs:
       - name: Install Yarn dependencies
         run: |
           yarn install --legacy-peer-deps --force
+      - name: Lint, Format and Organize imports
+        run: |
+          yarn run check
+      - name: Copy assets
+        run: |
+          yarn run assets
 
   build-android:
-    needs: install-and-test
+    needs: install-and-copy-assets
     runs-on: ubuntu-latest
     steps: 
       - uses: actions/checkout@v2  
@@ -38,10 +44,10 @@ jobs:
           yarn install --legacy-peer-deps --force
       - name: Remove the files generated during previous build tasks
         run: |
-          cd android && chmod +x ./gradlew clean && ./gradlew clean
+          cd android && chmod +x ./gradlew && ./gradlew clean
       - name: Build Android Release
         run: |
-          chmod +x ./gradlew && ./gradlew assembleRelease
+          ./gradlew assembleRelease
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
         with:

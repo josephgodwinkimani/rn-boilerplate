@@ -10,23 +10,18 @@
 import { css } from '../Styles';
 import * as React from 'react';
 import { Text, Button, View } from 'react-native';
-
 import Footer from '../components/Footer';
 
 export default function Screen2({ navigation }) {
-    return (
-        <View style={css.container}>
-            <Text>This is the Screen2</Text>
-            <Button
-                onPress={() => navigation.navigate('Notifications')}
-                title="Go to notifications"
-            />
-            <Button
-                onPress={
-                    () => navigation.navigate('Home')}
-                title="Go to Home"
-            />
-            <Footer />
-        </View>
-    );
+	return (
+		<View style={css.container}>
+			<Text>This is the Screen2</Text>
+			<Button
+				onPress={() => navigation.navigate('Notifications')}
+				title="Go to notifications"
+			/>
+			<Button onPress={() => navigation.navigate('Home')} title="Go to Home" />
+			<Footer />
+		</View>
+	);
 }
